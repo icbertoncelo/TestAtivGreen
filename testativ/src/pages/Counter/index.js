@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import api from '../../services/api';
 
+import cafefeliz from '../../assets/cafefeliz.png'
+import cafepistola from '../../assets/cafepistola.png'
+
 import { Container, Content } from './styles';
 
 export default function Counter() {
@@ -25,8 +28,10 @@ export default function Counter() {
   return (
     <Container>
       <Content>
-        <strong>{coffees.quantity}</strong>
-        <button tyoe="button"onClick={handleAddCoffee}>Adicionar</button>
+        <strong>CAFÉS TOMADOS NA AG HOJE</strong>
+        <h1>{coffees.quantity}</h1>
+        <img src={coffees.quantity > 0 ? cafefeliz : cafepistola} alt="Café"/>
+        <button tyoe="button"onClick={handleAddCoffee}>BEBER CAFÉ</button>
       </Content>
     </Container>
   );

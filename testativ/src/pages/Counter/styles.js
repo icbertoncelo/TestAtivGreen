@@ -14,17 +14,29 @@ export const Content = styled.div`
   align-items: center;
 
   strong {
-    color: #fff;
-    font-size: 32px;
+    color: #aa805a;
+    font-size: 24px;
     margin-bottom: 10px;
+  }
+
+  h1 {
+    color: #aa805a;
+    font-size: 100px;
+    margin-bottom: 40px;
+  }
+
+  img {
+    height: 180px;
+    width: 180px;
+    margin-bottom: 60px;
   }
 
   button {
     border: 0;
     border-radius: 4px;
-    background-color: #fff;
-    color: #333;
-    font-size: 20px;
-    padding: 5px;
+    background-color: #41B441;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
   }
 `;
